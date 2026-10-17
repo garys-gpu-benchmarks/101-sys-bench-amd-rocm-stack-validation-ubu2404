@@ -9,9 +9,9 @@
 sweep:
   profile: smoke
   kernel_version: 6.8.0
-  driver_version: 6
-  rocm_version: 7.2.1
-  required_packages: rocm-core,rocm-smi
+  driver_version: 31.60.0
+  rocm_version: 10.1.0
+  required_packages: amdrocm10.1,rocm-smi
   permissions_check: true
   output_format: csv
 
