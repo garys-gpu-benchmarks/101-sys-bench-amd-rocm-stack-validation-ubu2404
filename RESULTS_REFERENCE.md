@@ -3,7 +3,7 @@
 **Main goal:** Analyze ROCm software stack consistency against yaml expectations  
 **Tools:** Run rvs --version, rocminfo, amd-smi version, amd-smi static, uname -a, modinfo amdgpu, hipcc --version, and dpkg-query
 
-Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_139 · recorded 2026-11-13). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
+Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_140 · recorded 2026-11-13). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
 
 > Smoke runs use deliberately small sizes. They check that the workload installs and runs end to end; their numbers are not performance results. Baseline and extended are.
 
@@ -11,9 +11,9 @@ Reference results measured by the maintainer on the system shown in each section
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 24.04.5 LTS · kernel 6.8.0-147-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-13T13:42:36Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 04:29 · benchmark 00:02 · whole run 04:41
-- **Source:** run 101_20261113_134236
+- **Run:** 2026-11-13T19:57:35Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 05:05 · benchmark 00:02 · whole run 05:17
+- **Source:** run 101_20261113_195735
 - **Command:** `bash run_benchmark.sh --smoke --kernel-version 6.8.0 --required-packages amdrocm-base10.1,amdrocm-amdsmi10.1 --permissions-check true --driver-version 7.1.9 --rocm-version 10.1.0`
 
 | # | Metric | Result |
